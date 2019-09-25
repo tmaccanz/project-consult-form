@@ -1,3 +1,4 @@
 
-Starter Project for Todd Mcalinden's Static Website projects.
-Utilises Webpack 4, Gulp 4 and Hugo.
+General Web project consultation form.
+
+Form gives a brief overview of client's current and future web platform, business information, business philosophy, and marketing needs.

@@ -19,7 +19,7 @@ aside h1 {
 
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    padding: 0 0.25rem;
+    padding: 0 $small-spacing;
 
     @include query-1300 {
 

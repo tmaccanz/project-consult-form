@@ -1,0 +1,35 @@
+
+/* Button Styling */
+
+button {
+
+    width: auto;
+    position: relative;
+    align-self: center;
+    background: none;
+    color: $dark-color;
+    border: solid 5px $dark-color;
+    padding: $small-spacing;
+    z-index: 1;
+    overflow:hidden;
+    cursor: pointer;
+    @include transition-standard;
+}
+
+button:before {
+
+    content: "";
+    position: absolute;
+    background: $primary-color;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    @include transition-standard;
+}
+
+button:hover:before {
+
+    top: 0;
+}

@@ -1,0 +1,7 @@
+
+baseurl = "/"
+languageCode = "en-nz"
+languageLang = "en"
+title = "Project Consult Form"
+
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]

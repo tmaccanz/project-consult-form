@@ -1,0 +1,9 @@
+
+/* Transition Styling */
+
+// Element Transitions //
+
+@mixin transition-standard {
+
+    transition: 0.3s ease-in-out;
+}

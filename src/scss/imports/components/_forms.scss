@@ -1,0 +1,60 @@
+
+/* Form Styling */
+
+.form {
+    
+    width: 50%;
+    @include flex-column-center-start;
+    margin-top: $medium-spacing;
+
+    @include query-1200 {
+
+        width: 70%;
+    }
+    @include query-700 {
+
+        width: 90%;
+    }
+}
+
+.form h3 {
+
+    margin-bottom: $small-spacing;
+}
+
+.form__field {
+
+    width: 100%;
+    @include flex-column-center-start;
+    margin-bottom: $medium-spacing;
+}
+
+label {
+
+    margin-bottom: $extra-small-spacing;
+}
+
+.form__field--bot {
+
+    display: none;
+}
+
+.form__input {
+
+    width: 100%;
+    background-color: transparent;
+    border: 3px solid $dark-color;
+    @include transition-standard;
+    padding: $small-spacing;
+    outline: 0;
+}
+
+.form__input:hover {
+
+    border: 3px solid $secondary-color;
+}
+
+.form__input:focus {
+
+    border: 3px solid $primary-color;
+}

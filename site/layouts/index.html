@@ -1,0 +1,176 @@
+
+
+{{ define "main" }}
+
+{{ partial "header.html" . }}
+
+<!-- Home Page -->
+
+<main class="home-module">
+
+    <aside>
+
+        <h1>Web Project Consult Form</h1>
+
+    </aside>
+    
+    <div class="form__container">
+    
+        <a class="logo" href="/index.html"><img src="media/graphics/logo.svg" alt="logo for Todd McAlinden"></a>
+        <h2><span>Hello!</span> Please fill out the form fully below</h2>
+        <h3>Enter "N/A" if field not applicable</h3>
+        <form class="form" name="Project Consult Form" method="POST" action="/#contact" data-netlify-recaptcha="true" data-netlify="true" netlify-honeypot="bot-field">
+
+            <div class="form__divider"></div>
+            <h3>About Your business</h3>
+            <p class="form__field">
+                <label>The exact name of your business, including abbreviations:</label>
+                <input class="form__input" type="text" name="name" required/>
+            </p>
+            <p class="form__field">
+                <label>Your full business address:</label> 
+                <input class="form__input" type="text" name="address" required/>
+            </p>
+            <p class="form__field">
+                <label>Your business phone & mobile:</label> 
+                <input class="form__input" type="text" name="phone" required/>
+            </p>
+            <input class="form__field--bot" name="bot-field" type="text" class="feedback-input-hidden"/>
+            <p class="form__field">
+                <label>Your business email address:</label> 
+                <input class="form__input" type="email" name="email" required/>
+            </p>    
+            <p class="form__field">
+                <label>Brief description of your business:</label> 
+                <textarea class="form__input" name="Business Description" required></textarea>
+            </p>
+            <div class="form__divider"></div>
+            <h3 class="form__header">Project Specifics</h3>
+            <p class="form__field">
+                <label>Do you need domain set up:</label>
+                <textarea class="form__input" name="Domain Details" required></textarea>
+            </p>
+            <p class="form__field">
+                <label>Do you need Business email set up:</label> 
+                <textarea class="form__input" name="Business Email" required></textarea>
+            </p>  
+            <p class="form__field">
+                <label>Do you have a current hosting system/plan:</label>
+                <textarea class="form__input" name="Hosting Details" required></textarea>
+            </p>        
+            <p class="form__field">
+                <label>What's your ideal deadline & timeframe for your project:</label>
+                <textarea class="form__input" name="Deadline Details" required></textarea>
+            </p>         
+            <p class="form__field">
+                <label>What's your budget range for your project (NZ$):</label>
+                <textarea class="form__input" name="Budget Details" required></textarea>
+            </p>
+            <div class="form__divider"></div>
+            <h3 class="form__header">What Do You Want From Your Project</h3>
+            <p class="form__field">
+                <label>Do you need to increase brand awareness:</label>
+                <textarea class="form__input" name="Brand Awareness Details" required></textarea>
+            </p>
+            <p class="form__field">
+                <label>Do you need to target a new customer audience:</label> 
+                <textarea class="form__input" name="Target Customer Details" required></textarea>
+            </p>
+            <p class="form__field">
+                <label>Do you need to automate a current system/process:</label>
+                <textarea class="form__input" name="System Automation" required></textarea>
+            </p>        
+            <p class="form__field">
+                <label>Do you need to sell products or services online:</label>
+                <textarea class="form__input" name="Sell Products/Services Details" required></textarea>
+            </p>
+            <p class="form__field">
+                <label>Do you need a booking or appointment system:</label>
+                <textarea class="form__input" name="Booking System Details" required></textarea>
+            </p>
+            <p class="form__field">
+                <label>Do you need to build customer loyalty:</label>
+                <textarea class="form__input" name="Customer Loyalty Details" required></textarea>
+            </p>
+            <p class="form__field">
+                <label>Do you need to reach customers in multiple languages:</label> 
+                <textarea class="form__input" name="Language Details" required></textarea>
+            </p>      
+            <p class="form__field">
+                <label>Do you need to edit and create new page content easily and frequently:</label>
+                <textarea class="form__input" name="Content Management Details" required></textarea>
+            </p>
+            <p class="form__field">
+                <label>Do you need social media integration:</label>
+                <textarea class="form__input" name="Social Media Integration" required></textarea>
+            </p>
+            <p class="form__field">
+                <label>Do you need a social media & SEO marketing strategy:</label>
+                <textarea class="form__input" name="Social Media/SEO Marketing" required></textarea>
+            </p>
+            <p class="form__field">
+                <label>What is your online marketing budget:</label> 
+                <textarea class="form__input" name="Online Marketing Budget" required></textarea>
+            </p>       
+            <p class="form__field">
+                <label>Do you need a section to write your blog:</label>
+                <textarea class="form__input" name="Blog Section Details" required></textarea>
+            </p>        
+            <p class="form__field">
+                <label>What and how many web pages/sections would you like:</label>
+                <textarea class="form__input" name="Page/Section Details" required></textarea>
+            </p>         
+            <p class="form__field">
+                <label>Do you need any custom features:</label>
+                <textarea class="form__input" name="Custom Features" required></textarea>
+            </p>   
+            <div class="form__divider"></div>
+            <h3 class="form__header">Understanding Your Business</h3>
+            <p class="form__field">
+                <label>Who is your general target audience:</label>
+                <textarea class="form__input" name="General Target Audience" required></textarea>
+            </p>
+            <p class="form__field">
+                <label>Target audience age, gender, income, education, profession and location:</label> 
+                <textarea class="form__input" name="Target Audience Details" required></textarea>
+            </p>         
+            <p class="form__field">
+                <label>What is your business point of difference:</label>
+                <textarea class="form__input" name="Point Of Difference Details" required></textarea>
+            </p>
+            <p class="form__field">
+                <label>What words would you use to search for your business on Google:</label>
+                <textarea class="form__input" name="Keyword Details" required></textarea>
+            </p>         
+            <p class="form__field">
+                <label>Why do clients come back to you:</label>
+                <textarea class="form__input" name="Client Return Details" required></textarea>
+            </p>
+            <p class="form__field">
+                <label>What do you dislike and like about your competitors:</label> 
+                <textarea class="form__input" name="Competitor Details" required></textarea>
+            </p>             
+            <p class="form__field">
+                <label>What are any other details of your business:</label>
+                <textarea class="form__input" name="Other Business Details" required></textarea>
+            </p>        
+            <div class="form__divider"></div>
+            <h3 class="form__header">Additional Details</h3>                
+            <p class="form__field">
+                <label>Do you have any other additional details?:</label>
+                <textarea class="form__input" name="Other Additional Details" required></textarea>
+            </p>         
+            <div class="recpatcha-input" data-netlify-recaptcha="true"></div>               
+            <p><button type="submit">Submit Form!</button></p>
+
+        </form>
+    
+    </div>
+
+</main>
+
+{{ partial "footer.html" . }}
+
+{{end}}
+
+

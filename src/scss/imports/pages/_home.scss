@@ -1,0 +1,83 @@
+
+/* Home Page Styling */
+
+aside {
+
+    height: 100vh;
+    background-color: $primary-color;
+    @include flex-column-center;
+    position: fixed;
+    left: 0;
+
+    @include query-700 {
+
+        display: none;
+    }
+}
+
+aside h1 {
+
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    padding: 0 0.25rem;
+
+    @include query-1300 {
+
+        padding: 0 $extra-small-spacing;
+    }
+}
+
+.form__container {
+
+    width: 100%;
+    @include flex-column-center;
+    margin-bottom: $large-spacing;
+}
+
+.logo {
+
+    width: 6rem;
+    align-self: center;
+    background-color: $primary-color;
+    margin-bottom: $large-spacing;
+}
+
+.logo img {
+
+    width: 100%;
+    height: 100%;
+    padding: $small-spacing;
+}
+
+.form__container h2 {
+
+    @include query-800{
+
+        font-size: 1.5em;
+        margin-bottom: $extra-small-spacing; 
+    }
+    @include query-600 {
+
+        max-width: 90%;
+        text-align: center;
+    }
+}
+
+.form__container h2 span {
+
+    color: $primary-color;
+}
+
+.form__container h3 {
+
+    @include query-600 {
+
+        max-width: 90%;
+        text-align: center;
+    }
+}
+
+.recpatcha-input {
+
+    align-self: center;
+}

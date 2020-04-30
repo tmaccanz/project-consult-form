@@ -15,7 +15,7 @@
 		"author": "Todd McAlinden",
 		"license": "MIT",
 		"dependencies": {
-				"jquery": "^3.4.1",
+				"jquery": "^3.5.0",
 				"whatwg-fetch": "^3.0.0"
 		},
 		"resolutions": {},
